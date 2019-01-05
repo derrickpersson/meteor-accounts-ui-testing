@@ -20,9 +20,7 @@ import utilities.DataGenerator as DataGenerator
 
 DataGenerator dataGenerator = new DataGenerator()
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl(GlobalVariable.homeURL)
+WebUI.openBrowser(GlobalVariable.homeURL)
 
 WebUI.waitForPageLoad(2)
 
