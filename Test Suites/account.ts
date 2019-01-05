@@ -28,4 +28,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/login</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>c0cbee4e-aeac-470a-8dd1-464a87b4ae65</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/registrationError</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
