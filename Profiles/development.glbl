@@ -14,4 +14,9 @@
       <initValue>'http://localhost:3000/register'</initValue>
       <name>registerURL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://localhost:3000/login'</initValue>
+      <name>loginURL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

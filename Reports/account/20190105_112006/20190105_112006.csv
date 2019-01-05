@@ -1,0 +1,41 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+account,Chrome 71.0.3578.98,,2019-01-05 11:20:13,2019-01-05 11:20:48,35.808s,PASSED
+,,,,,,
+Test Cases/initialRedirect,Chrome 71.0.3578.98,,2019-01-05 11:20:13,2019-01-05 11:20:29,15.129s,PASSED
+"openBrowser("""")",Chrome 71.0.3578.98,,2019-01-05 11:20:15,2019-01-05 11:20:25,10.513s,PASSED
+navigateToUrl(homeURL),Chrome 71.0.3578.98,,2019-01-05 11:20:25,2019-01-05 11:20:27,1.919s,PASSED
+waitForPageLoad(2),Chrome 71.0.3578.98,,2019-01-05 11:20:27,2019-01-05 11:20:28,1.095s,PASSED
+windowURL = getUrl(),Chrome 71.0.3578.98,,2019-01-05 11:20:28,2019-01-05 11:20:28,0.076s,PASSED
+assert windowURL == registerURL,Chrome 71.0.3578.98,,2019-01-05 11:20:28,2019-01-05 11:20:28,0.010s,PASSED
+closeBrowser(),Chrome 71.0.3578.98,,2019-01-05 11:20:28,2019-01-05 11:20:29,0.352s,PASSED
+,,,,,,
+Test Cases/registration,Chrome 71.0.3578.98,,2019-01-05 11:20:29,2019-01-05 11:20:40,11.854s,PASSED
+dataGenerator = new utilities.DataGenerator(),Chrome 71.0.3578.98,,2019-01-05 11:20:29,2019-01-05 11:20:29,0.011s,PASSED
+"openBrowser("""")",Chrome 71.0.3578.98,,2019-01-05 11:20:29,2019-01-05 11:20:32,3.166s,PASSED
+navigateToUrl(homeURL),Chrome 71.0.3578.98,,2019-01-05 11:20:32,2019-01-05 11:20:34,1.591s,PASSED
+waitForPageLoad(2),Chrome 71.0.3578.98,,2019-01-05 11:20:34,2019-01-05 11:20:35,0.663s,PASSED
+"setText(findTestObject(""Registration Page/register-username""), dataGenerator.getRandomUsername())",Chrome 71.0.3578.98,,2019-01-05 11:20:35,2019-01-05 11:20:36,1.573s,PASSED
+"setText(findTestObject(""Registration Page/register-email""), dataGenerator.getRandomEmail())",Chrome 71.0.3578.98,,2019-01-05 11:20:36,2019-01-05 11:20:38,1.277s,PASSED
+randomPassword = dataGenerator.getRandomPassword(),Chrome 71.0.3578.98,,2019-01-05 11:20:38,2019-01-05 11:20:38,0.003s,PASSED
+"setText(findTestObject(""Registration Page/register-password""), randomPassword)",Chrome 71.0.3578.98,,2019-01-05 11:20:38,2019-01-05 11:20:38,0.482s,PASSED
+"setText(findTestObject(""Registration Page/register-password2""), randomPassword)",Chrome 71.0.3578.98,,2019-01-05 11:20:38,2019-01-05 11:20:39,0.897s,PASSED
+"click(findTestObject(""Registration Page/register-terms""))",Chrome 71.0.3578.98,,2019-01-05 11:20:39,2019-01-05 11:20:39,0.249s,PASSED
+"submit(findTestObject(""Registration Page/submit""))",Chrome 71.0.3578.98,,2019-01-05 11:20:39,2019-01-05 11:20:39,0.223s,PASSED
+"waitForElementPresent(findTestObject(""Dashboard Page/displayUsername""), 2)",Chrome 71.0.3578.98,,2019-01-05 11:20:39,2019-01-05 11:20:40,0.655s,PASSED
+"assert verifyElementPresent(findTestObject(""Dashboard Page/displayUsername""), 0)",Chrome 71.0.3578.98,,2019-01-05 11:20:40,2019-01-05 11:20:40,0.041s,PASSED
+"assert verifyElementPresent(findTestObject(""Dashboard Page/logout""), 0)",Chrome 71.0.3578.98,,2019-01-05 11:20:40,2019-01-05 11:20:40,0.037s,PASSED
+"assert getUrl() == homeURL + ""/""",Chrome 71.0.3578.98,,2019-01-05 11:20:40,2019-01-05 11:20:40,0.018s,PASSED
+closeBrowser(),Chrome 71.0.3578.98,,2019-01-05 11:20:40,2019-01-05 11:20:40,0.200s,PASSED
+,,,,,,
+Test Cases/login,Chrome 71.0.3578.98,,2019-01-05 11:20:40,2019-01-05 11:20:48,7.890s,PASSED
+"openBrowser("""")",Chrome 71.0.3578.98,,2019-01-05 11:20:41,2019-01-05 11:20:44,3.443s,PASSED
+navigateToUrl(loginURL),Chrome 71.0.3578.98,,2019-01-05 11:20:44,2019-01-05 11:20:45,1.245s,PASSED
+waitForPageLoad(2),Chrome 71.0.3578.98,,2019-01-05 11:20:45,2019-01-05 11:20:46,0.469s,PASSED
+"setText(findTestObject(""Login Page/login-username""), findTestData(""User"").getValue(1, 1))",Chrome 71.0.3578.98,,2019-01-05 11:20:46,2019-01-05 11:20:47,0.935s,PASSED
+"setText(findTestObject(""Login Page/login-password""), findTestData(""User"").getValue(3, 1))",Chrome 71.0.3578.98,,2019-01-05 11:20:47,2019-01-05 11:20:47,0.295s,PASSED
+"submit(findTestObject(""Login Page/submit""))",Chrome 71.0.3578.98,,2019-01-05 11:20:47,2019-01-05 11:20:47,0.078s,PASSED
+"waitForElementPresent(findTestObject(""Dashboard Page/displayUsername""), 2)",Chrome 71.0.3578.98,,2019-01-05 11:20:47,2019-01-05 11:20:48,0.640s,PASSED
+"assert verifyElementPresent(findTestObject(""Dashboard Page/displayUsername""), 0)",Chrome 71.0.3578.98,,2019-01-05 11:20:48,2019-01-05 11:20:48,0.062s,PASSED
+"assert verifyElementPresent(findTestObject(""Dashboard Page/logout""), 0)",Chrome 71.0.3578.98,,2019-01-05 11:20:48,2019-01-05 11:20:48,0.072s,PASSED
+"assert getUrl() == homeURL + ""/""",Chrome 71.0.3578.98,,2019-01-05 11:20:48,2019-01-05 11:20:48,0.010s,PASSED
+closeBrowser(),Chrome 71.0.3578.98,,2019-01-05 11:20:48,2019-01-05 11:20:48,0.283s,PASSED

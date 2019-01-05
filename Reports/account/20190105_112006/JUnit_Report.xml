@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="account" time="35" tests="3" failures="0" errors="0">
+   <testsuite name="account" tests="3" failures="0" errors="0" time="35" timestamp="2019-01-05 11:20:13" hostname="derrickpersson - 10.0.0.106" id="Test Suites/account">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/derrickpersson/Katalon Studio/simple-account-ui-testing/Reports/account/20190105_112006"/>
+         <property name="logFiles" value="/Users/derrickpersson/Katalon Studio/simple-account-ui-testing/Reports/account/20190105_112006/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="derrickpersson - 10.0.0.106"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="5.10.1.1"/>
+         <property name="browser" value="Chrome 71.0.3578.98"/>
+         <property name="hostAddress" value="10.0.0.106"/>
+         <property name="sessionId" value="edad5f8c4165c5e9e9a3104996c5e8ec"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/initialRedirect" classname="Test Cases/initialRedirect" status="PASSED">
+         <system-out><![CDATA[2019-01-05 11:20:13 - [TEST_CASE][PASSED] - Test Cases/initialRedirect: Test Cases/initialRedirect
+
+2019-01-05 11:20:15 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-01-05 11:20:17 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-01-05 11:20:17 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-01-05 11:20:25 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-01-05 11:20:25 - [TEST_STEP][PASSED] - navigateToUrl(homeURL): Navigate to 'http://localhost:3000' successfully
+
+2019-01-05 11:20:27 - [MESSAGE][PASSED] - Navigate to 'http://localhost:3000' successfully
+
+2019-01-05 11:20:27 - [TEST_STEP][PASSED] - waitForPageLoad(2): Wait for page load successfully
+
+2019-01-05 11:20:28 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-01-05 11:20:28 - [TEST_STEP][PASSED] - windowURL = getUrl(): Current window's url is: 'http://localhost:3000/register'
+
+2019-01-05 11:20:28 - [MESSAGE][PASSED] - Current window's url is: 'http://localhost:3000/register'
+
+2019-01-05 11:20:28 - [TEST_STEP][PASSED] - assert windowURL == registerURL: null
+
+2019-01-05 11:20:28 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-01-05 11:20:29 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/registration" classname="Test Cases/registration" status="PASSED">
+         <system-out><![CDATA[2019-01-05 11:20:29 - [TEST_CASE][PASSED] - Test Cases/registration: Test Cases/registration
+
+2019-01-05 11:20:29 - [TEST_STEP][PASSED] - dataGenerator = new utilities.DataGenerator(): null
+
+2019-01-05 11:20:29 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-01-05 11:20:29 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-01-05 11:20:32 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-01-05 11:20:32 - [TEST_STEP][PASSED] - navigateToUrl(homeURL): Navigate to 'http://localhost:3000' successfully
+
+2019-01-05 11:20:34 - [MESSAGE][PASSED] - Navigate to 'http://localhost:3000' successfully
+
+2019-01-05 11:20:34 - [TEST_STEP][PASSED] - waitForPageLoad(2): Wait for page load successfully
+
+2019-01-05 11:20:35 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-01-05 11:20:35 - [TEST_STEP][PASSED] - setText(findTestObject("Registration Page/register-username"), dataGenerator.getRandomUsername()): Text 'bf4ef4ef-fc04-4e3c-94b1-2a307a110015' is set on object 'Object Repository/Registration Page/register-username'
+
+2019-01-05 11:20:36 - [MESSAGE][PASSED] - Text 'bf4ef4ef-fc04-4e3c-94b1-2a307a110015' is set on object 'Object Repository/Registration Page/register-username'
+
+2019-01-05 11:20:36 - [TEST_STEP][PASSED] - setText(findTestObject("Registration Page/register-email"), dataGenerator.getRandomEmail()): Text '35e7ad6c-1fbe-474e-9cce-f6be307920d9@email.com' is set on object 'Object Repository/Registration Page/register-email'
+
+2019-01-05 11:20:38 - [MESSAGE][PASSED] - Text '35e7ad6c-1fbe-474e-9cce-f6be307920d9@email.com' is set on object 'Object Repository/Registration Page/register-email'
+
+2019-01-05 11:20:38 - [TEST_STEP][PASSED] - randomPassword = dataGenerator.getRandomPassword(): null
+
+2019-01-05 11:20:38 - [TEST_STEP][PASSED] - setText(findTestObject("Registration Page/register-password"), randomPassword): Text '52c653d9-562d-431e-869d-a7aef62e31d3' is set on object 'Object Repository/Registration Page/register-password'
+
+2019-01-05 11:20:38 - [MESSAGE][PASSED] - Text '52c653d9-562d-431e-869d-a7aef62e31d3' is set on object 'Object Repository/Registration Page/register-password'
+
+2019-01-05 11:20:38 - [TEST_STEP][PASSED] - setText(findTestObject("Registration Page/register-password2"), randomPassword): Text '52c653d9-562d-431e-869d-a7aef62e31d3' is set on object 'Object Repository/Registration Page/register-password2'
+
+2019-01-05 11:20:39 - [MESSAGE][PASSED] - Text '52c653d9-562d-431e-869d-a7aef62e31d3' is set on object 'Object Repository/Registration Page/register-password2'
+
+2019-01-05 11:20:39 - [TEST_STEP][PASSED] - click(findTestObject("Registration Page/register-terms")): Object: 'Object Repository/Registration Page/register-terms' is clicked on
+
+2019-01-05 11:20:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Registration Page/register-terms' is clicked on
+
+2019-01-05 11:20:39 - [TEST_STEP][PASSED] - submit(findTestObject("Registration Page/submit")): The form containing object: 'Object Repository/Registration Page/submit' is submitted
+
+2019-01-05 11:20:39 - [MESSAGE][PASSED] - The form containing object: 'Object Repository/Registration Page/submit' is submitted
+
+2019-01-05 11:20:39 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Dashboard Page/displayUsername"), 2): Object 'Object Repository/Dashboard Page/displayUsername' is present
+
+2019-01-05 11:20:40 - [MESSAGE][PASSED] - Object 'Object Repository/Dashboard Page/displayUsername' is present
+
+2019-01-05 11:20:40 - [TEST_STEP][PASSED] - assert verifyElementPresent(findTestObject("Dashboard Page/displayUsername"), 0): Object 'Object Repository/Dashboard Page/displayUsername' is present
+
+2019-01-05 11:20:40 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-01-05 11:20:40 - [MESSAGE][PASSED] - Object 'Object Repository/Dashboard Page/displayUsername' is present
+
+2019-01-05 11:20:40 - [TEST_STEP][PASSED] - assert verifyElementPresent(findTestObject("Dashboard Page/logout"), 0): Object 'Object Repository/Dashboard Page/logout' is present
+
+2019-01-05 11:20:40 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-01-05 11:20:40 - [MESSAGE][PASSED] - Object 'Object Repository/Dashboard Page/logout' is present
+
+2019-01-05 11:20:40 - [TEST_STEP][PASSED] - assert getUrl() == homeURL + "/": Current window's url is: 'http://localhost:3000/'
+
+2019-01-05 11:20:40 - [MESSAGE][PASSED] - Current window's url is: 'http://localhost:3000/'
+
+2019-01-05 11:20:40 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-01-05 11:20:40 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/login" classname="Test Cases/login" status="PASSED">
+         <system-out><![CDATA[2019-01-05 11:20:40 - [TEST_CASE][PASSED] - Test Cases/login: Test Cases/login
+
+2019-01-05 11:20:41 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-01-05 11:20:41 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-01-05 11:20:44 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-01-05 11:20:44 - [TEST_STEP][PASSED] - navigateToUrl(loginURL): Navigate to 'http://localhost:3000/login' successfully
+
+2019-01-05 11:20:45 - [MESSAGE][PASSED] - Navigate to 'http://localhost:3000/login' successfully
+
+2019-01-05 11:20:45 - [TEST_STEP][PASSED] - waitForPageLoad(2): Wait for page load successfully
+
+2019-01-05 11:20:46 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-01-05 11:20:46 - [TEST_STEP][PASSED] - setText(findTestObject("Login Page/login-username"), findTestData("User").getValue(1, 1)): Text 'automated-ui-user' is set on object 'Object Repository/Login Page/login-username'
+
+2019-01-05 11:20:47 - [MESSAGE][PASSED] - Text 'automated-ui-user' is set on object 'Object Repository/Login Page/login-username'
+
+2019-01-05 11:20:47 - [TEST_STEP][PASSED] - setText(findTestObject("Login Page/login-password"), findTestData("User").getValue(3, 1)): Text 'Test123' is set on object 'Object Repository/Login Page/login-password'
+
+2019-01-05 11:20:47 - [MESSAGE][PASSED] - Text 'Test123' is set on object 'Object Repository/Login Page/login-password'
+
+2019-01-05 11:20:47 - [TEST_STEP][PASSED] - submit(findTestObject("Login Page/submit")): The form containing object: 'Object Repository/Login Page/submit' is submitted
+
+2019-01-05 11:20:47 - [MESSAGE][PASSED] - The form containing object: 'Object Repository/Login Page/submit' is submitted
+
+2019-01-05 11:20:47 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Dashboard Page/displayUsername"), 2): Object 'Object Repository/Dashboard Page/displayUsername' is present
+
+2019-01-05 11:20:48 - [MESSAGE][PASSED] - Object 'Object Repository/Dashboard Page/displayUsername' is present
+
+2019-01-05 11:20:48 - [TEST_STEP][PASSED] - assert verifyElementPresent(findTestObject("Dashboard Page/displayUsername"), 0): Object 'Object Repository/Dashboard Page/displayUsername' is present
+
+2019-01-05 11:20:48 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-01-05 11:20:48 - [MESSAGE][PASSED] - Object 'Object Repository/Dashboard Page/displayUsername' is present
+
+2019-01-05 11:20:48 - [TEST_STEP][PASSED] - assert verifyElementPresent(findTestObject("Dashboard Page/logout"), 0): Object 'Object Repository/Dashboard Page/logout' is present
+
+2019-01-05 11:20:48 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-01-05 11:20:48 - [MESSAGE][PASSED] - Object 'Object Repository/Dashboard Page/logout' is present
+
+2019-01-05 11:20:48 - [TEST_STEP][PASSED] - assert getUrl() == homeURL + "/": Current window's url is: 'http://localhost:3000/'
+
+2019-01-05 11:20:48 - [MESSAGE][PASSED] - Current window's url is: 'http://localhost:3000/'
+
+2019-01-05 11:20:48 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-01-05 11:20:48 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-01-05 11:20:13 - [TEST_SUITE][PASSED] - account: Test Cases/login]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

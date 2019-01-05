@@ -14,4 +14,9 @@
       <initValue>'https://meteor-account.herokuapp.com/register'</initValue>
       <name>registerURL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://meteor-account.herokuapp.com/login'</initValue>
+      <name>loginURL</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
